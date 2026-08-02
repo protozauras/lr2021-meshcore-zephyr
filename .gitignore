@@ -1,0 +1,10 @@
+*.exe
+*.pdb
+*.obj
+*.o
+*.a
+*.elf
+build/
+west/
+__pycache__/
+.DS_Store
