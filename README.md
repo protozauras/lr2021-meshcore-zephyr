@@ -102,6 +102,8 @@ Replace `<YOUR_UID>` with your device's unique ID (e.g. `8802F48F`).
 
 **Typical setup:** Multiple repeaters spread across an area + one companion paired with your phone.
 
+> ⚠️ **Repeater configuration is done ONLY via [config.meshcore.io](https://config.meshcore.io/)** — you configure a repeater through that web page, otherwise it won't work. Use the **Repeater** option there, enter your repeater's public key, and set the admin password (`123456` by default).
+
 ---
 
 ## First-Time Setup (via USB Serial)
@@ -137,9 +139,9 @@ set meshtimesync on
 > Enables automatic time synchronization from the mesh network. Survives reboots.
 
 ```
-password <YOUR_PASSWORD>
+password 123456
 ```
-> Set your admin password (max 15 characters). This is used for remote admin login from the app.
+> **Default admin password is `123456`** (max 15 characters). This is used for remote admin login from the app. Keep it as `123456` so other users / the app can log in, or change it with `password <NEW>`.
 
 ```
 set tx 22
@@ -163,11 +165,13 @@ The `public.key` output is your device's identity — you'll need to add this to
 
 ### Adding Your Repeater to the App
 
+> ⚠️ **Configure your repeater at [config.meshcore.io](https://config.meshcore.io/) first** — a repeater is configured on that web page (generate/find your public key prefix, set admin password `123456`), otherwise the app won't see it. Then add it in the app:
+
 1. Open MeshCom / MeshCore app on your phone
 2. Go to **Contacts** → **Add Contact**
 3. Enter the **public key** from `get public.key`
 4. Set type to **Repeater**
-5. Enter admin password
+5. Enter admin password (`123456` by default)
 
 > ⚠️ **Important:** Add as **admin first**, not guest. Guest login can overwrite admin permissions.
 
