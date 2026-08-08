@@ -1,5 +1,13 @@
 # LR2021 MeshCore on Zephyr — SeeedStudio Semtech LR2021 LoRa Plus EVK
 
+> ⚠️ **This repo is superseded.** The dual-band version (868 MHz + 2.4 GHz) with 5 build variants, TDM band switching, and a working 2.4 GHz backbone is now at:
+> 
+> ### 👉 [**protozauras/meshcore-lr2021-dualband**](https://github.com/protozauras/meshcore-lr2021-dualband)
+> 
+> This repo remains for historical reference only (sub-GHz single-band, v0.1.0). For the latest firmware with dual-band support, go to the new repo.
+
+---
+
 **First working MeshCore firmware for the SeeedStudio Semtech LR2021 LoRa Plus Evaluation Kit.**
 
 ![Hardware](photos/hardware-photo.jpg)
